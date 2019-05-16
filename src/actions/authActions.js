@@ -20,6 +20,14 @@ export const registerUser = (userData,history) => dispatch => {
 
 };
 
+
+export const fileUpload = (avatar) => {
+  axios
+    .post(`${BackEndUrl}/api/file-router/upload-image`,avatar)
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+};
+
 // //login - Get User Token
 export const loginUser = userData => dispatch => {
   axios.post(`${BackEndUrl}/api/users/login`, userData)

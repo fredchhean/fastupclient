@@ -30,6 +30,8 @@ class Dashboard extends Component {
         dashboardContent = (
           <div>
           <p>Welcome <Link to={`/profile/${profile.handle}`}>{user.firstname}</Link></p>
+          <img src={user.avatar} alt=""/>
+
           <ProfileActions/>
           <button onClick={this.onDeleteClick.bind(this)}>Delete my account</button>
           </div>

@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import{withRouter} from "react-router-dom";
 import {connect} from "react-redux";
-import {registerUser} from "../../actions/authActions";
+import {registerUser, fileUpload} from "../../actions/authActions";
 import TextFieldGroup from "../common/TextFieldGroup";
+
 
 class Register extends Component {
   constructor(){
@@ -37,6 +38,16 @@ class Register extends Component {
     this.setState({[e.target.name]: e.target.value});
   }
 
+  updateAvatar(event){
+    const {files} = event.target;
+    const updateData = new FormData();
+    updateData.append("avatarFile", files[0]);
+    console.log(files);
+    console.log(updateData);
+    fileUpload(updateData);
+
+  }
+
   onSubmit(e){
     e.preventDefault();
     const newUser = {
@@ -66,26 +77,26 @@ class Register extends Component {
         <TextFieldGroup
           placeholder="lastname"
           name="lastname"
-          type="lastname"
+          type="text"
           value={this.state.lastname}
           onChange={this.onChange}
           error={errors.lastname}
         />
-                        </label>
+      </label>
 
         <label>first name
         <TextFieldGroup
           placeholder="firstname"
           name="firstname"
-          type="firstname"
+          type="text"
           value={this.state.firstname}
           onChange={this.onChange}
           error={errors.firstname}
         />
-                </label>
+    </label>
 
-                        <label>email
-                        <TextFieldGroup
+     <label>email
+         <TextFieldGroup
           placeholder="email"
           name="email"
           type="email"
@@ -93,12 +104,11 @@ class Register extends Component {
           onChange={this.onChange}
           error={errors.email}
         />
-                          
-                        </label>
+     </label>
 
-                                <div>
-                                <label>Password
-                                <TextFieldGroup
+                          
+   <label>Password
+  <TextFieldGroup
           placeholder="password"
           name="password"
           type="password"
@@ -106,11 +116,18 @@ class Register extends Component {
           onChange={this.onChange}
           error={errors.password}
         />
-                                </label>
+        </label>
 
-                                        </div>
 
-        <input type="submit"/>
+        <label>
+       image upload
+        <input type="file" name="avatar" onChange={ event => this.updateAvatar(event)}/>
+        </label>
+<img src={this.state.avatar}></img>
+
+                                  
+
+        <button type="submit">submit</button>
         </form>
 
       </div>
