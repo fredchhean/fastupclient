@@ -15,16 +15,17 @@ class Landing extends Component {
       <div>
       <div className="top-container">
       <div className="desclanding">
-      {/* <p>Lorem ipsum dolor sit,</p>
-      <p>amet consectetur adipisicing elit.</p>
-        Cum, tempora ipsa quo temporibus veniam minima soluta quasi facilis? */}
-        {/* <img src={Galaxy} className="rocket"/> */}
-        <p className="connecttext">
+
+        <div className="connecttext">
+        <p>
         We connect Entrepreneurs and FastLancers
         </p>
-        <p className="textunicorns">
+        </div>
+        <div className="textunicorns">
+        <p>
         To create the futur UNICORNS
       </p>
+      </div>
         </div>
 
       </div>
