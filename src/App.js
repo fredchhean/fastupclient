@@ -23,6 +23,7 @@ import {clearCurrentProfile} from "./actions/profileActions";
 
 import PrivateRoute from "./components/common/PrivateRoute";
 
+// fake liner ;D
 
 //Check for token
 if(localStorage.jwtToken){
