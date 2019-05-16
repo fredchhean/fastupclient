@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Spinner from "../common/Spinner";
 import {getProfiles} from "../../actions/profileActions";
 import ProfileItem from "./ProfileItem";
+import "./Profiles.css";
 
 class Profiles extends Component {
 
@@ -26,11 +27,11 @@ class Profiles extends Component {
     }
 
     return (
-      <div>
+      <div className="fastlancerscontainer">
         <div>
           <div>
             <div>
-              <h1>Fastlancer Profiles</h1>
+              <h3>Fastlancer Profiles</h3>
               <p>Look at what we got!</p>
               {profileItems}
             </div>

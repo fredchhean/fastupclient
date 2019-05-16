@@ -2,47 +2,28 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
 import isEmpty from "../../validation/is-empty";
+import "./ProfileItem.css";
+
 
 class ProfileItem extends Component {
   render() {
     const {profile} = this.props;
     return (
-      <div>
-        <div>
-          <div>
-            <img src={profile.user.avatar}
-            alt="profile-image"/>
-          </div>
-          <div>
-            <h3>
-              {profile.user.firstname}
-              {profile.user.lastname}
+<div className="cardcontainer">
+<div className="card" style={{width: "23rem"}}>
+    <img className="card-img-top" src={profile.user.avatar}  alt="Card image cap"/>
+    <div className="card-body">
+    <h3 className="card-title"><span>{profile.user.firstname}</span><span> {profile.user.lastname}</span></h3>
+    <h2 className="card-text">{profile.title}</h2>
+  </div>
 
-            </h3>
-            <p>{profile.title} {isEmpty(profile.title) ? null : (<span>{profile.title}</span>)}</p>
-            <Link to={`/profile/${profile.handle}`}>
-            View Profile
-            </Link>
-          </div>
-          <h4>Skills</h4>
-          <ul>
-            {profile.skills.slice(0,10). map((skill, index) => (
-              <li key={index}>
-              {skill}
-              </li>
-            ))}
-          </ul>
-          <h4>Languages</h4>
-          <ul>
-            {profile.languages.slice(0,10). map((language, index) => (
-              <li key={index}>
-              {language}
-              </li>
-            ))}
-          </ul>
-          
-        </div>
-      </div>
+  <div className="card-body">
+    <Link to={`/profile/${profile.handle}`} href="#" className="card-link">Card profile</Link>
+  </div>
+    </div>
+    </div>
+
+
     )
   }
 }
@@ -52,3 +33,29 @@ ProfileItem.propTypes = {
 }
 
 export default ProfileItem;
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

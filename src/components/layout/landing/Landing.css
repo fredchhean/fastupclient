@@ -62,3 +62,13 @@
   position: absolute;
   top:100px;
 }
+
+.middlecontainer{
+  text-align: center;
+}
+
+.cardcontainer{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
