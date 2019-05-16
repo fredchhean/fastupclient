@@ -58,9 +58,6 @@ class Register extends Component {
       avatar: this.state.avatar,
     }
     this.props.registerUser(newUser, this.props.history);
-    // axios.post("http://localhost:8000/api/users/register", newUser)
-    //   .then(res => console.log(res))
-    //   .catch(err => console.log(err))
   }
 
 
