@@ -30,13 +30,13 @@ export default class Entrepreneurs extends Component {
 
   <div className="test card-body card-body1" style={{width: "55rem"}}>
   <img className="card-img-top" src={Team} alt="Card image cap" style={{width: "15rem"}} />
-    <h4 className="card-title card-title1">Squad Sprint</h4>
+    <h4 className="card-title card-title1">FastLancer Squad</h4>
     <p className="textoflogo card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 
   <div className="test card-body card-body1" style={{width: "55rem"}}>
   <img className="card-img-top" src={Comet} alt="Card image cap" style={{width: "15rem"}} />
-    <h4 className="card-title card-title1">Rocket Adventure</h4>
+    <h4 className="card-title card-title1">SkyRocket</h4>
     <p className="textoflogo card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 
