@@ -12,12 +12,17 @@
 
 .textunicorns{
   font-family: 'Rubik Mono One', sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
   color: white;
 }
 
 .connecttext{
   font-family: 'Rubik Mono One', sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
   color: #FFFD61;
+  
 }
 
 .button-landing{
@@ -29,11 +34,11 @@
 
 .top-container{
   background: url(./../../../img-for-landing/galaxy.png);
-  height: 700px;
+  height: 1200px;
   width: 100%;
   position: relative;
   background-size: 100% 700px;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: contain;
   justify-items: top;
   align-items: center;
@@ -54,9 +59,9 @@
 }
 
 .desclanding{
-  width: 40%;
+  width: 80%;
   padding-top: Opx;
-  margin-top: Opx;
+  margin: Opx;
   text-align: center;
   font-weight: bold;
   position: absolute;
