@@ -13,7 +13,7 @@ class ProfileItem extends Component {
 <div className="card" style={{width: "20rem"}}>
     <img className="card-img-top" src={profile.user.avatar}  alt="Card image cap"/>
     <div id ="jaune" className="card-body">
-    <h3 className="card-title"><span>{profile.user.firstname}</span><span> {profile.user.lastname}</span></h3>
+    <h3 className="card-title"><p>{profile.user.firstname}</p><p> {profile.user.lastname}</p></h3>
     <h2 className="card-text">{profile.title}</h2>
   </div>
 
