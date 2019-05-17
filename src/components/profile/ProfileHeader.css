@@ -1,0 +1,21 @@
+.profileheadercontainer{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-ind{
+    border-radius:300px;
+}
+
+.card-body{
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px;
+}
