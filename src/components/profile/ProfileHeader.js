@@ -30,13 +30,13 @@ class ProfileHeader extends Component {
         </div> */}
           <img className="card-img-top img-ind" src={profile.user.avatar} alt="Card image cap" style={{width: "15rem"}} />
 
-<div className="card" style={{width: "60rem"}}>
+<div className="card card1" style={{width: "60rem"}}>
 
-  <div className="card-body" style={{width: "34rem"}}>
+  <div className="card-body card-body1" style={{width: "34rem"}}>
     <h4 className="card-title">HERO EXPERIENCE</h4>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
-  <div className="card-body" style={{width: "34rem"}}>
+  <div className="card-body card-body1" style={{width: "34rem"}}>
     <h4 className="card-title">HERO EXPERIENCE</h4>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
