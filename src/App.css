@@ -6,6 +6,8 @@
   /* justify-items: center; */
   position: relative;
   top:0;
+  padding: 2rem;
+  size: 30%;
 }
 
 .logo{
