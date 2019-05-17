@@ -1,8 +1,17 @@
 .cardcontainer{
     display: inline-block;
-    margin: 4rem;
+    margin: 5rem;
 }
 
 h3{
-    color: #5992E1;
+    color:black;
+    font-weight: bold;
+}
+
+h2{
+    color:#5992E1;
+}
+
+#jaune{
+    background-color: #FFFD61;
 }

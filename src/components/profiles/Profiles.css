@@ -1,3 +1,21 @@
 .fastlancerscontainer{
     width: 1000px;
+    background: url(../../img-for-landing/galaxy.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.fastlancerspro{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.h5{
+    padding-top: 2rem;
+    font-size: 10rem;
 }

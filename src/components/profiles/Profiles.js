@@ -30,9 +30,9 @@ class Profiles extends Component {
       <div className="fastlancerscontainer">
         <div>
           <div>
-            <div>
-              <h3>Fastlancer Profiles</h3>
-              <p>Look at what we got!</p>
+            <div className="fastlancerspro">
+              <h5>Fastlancer Profiles</h5>
+              <h5>Look at what we got!</h5>
               {profileItems}
             </div>
           </div>

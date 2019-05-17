@@ -17,6 +17,8 @@ class Navbar extends Component {
     const authLinks = (
       <nav>
         <Link to="/" className="navlink">Home</Link>
+        <Link to="/entrepreneurs" className="navlink">Entrepreneur</Link>
+
         <Link to="/profiles" className="navlink">FastLancers</Link>
         <Link to="/dashboard" className="navlink">Dashboard</Link>
         <a href="" onClick={this.onLogoutClick.bind(this)}>< img className="iconfornav" src={user.avatar} width="30" height="30" alt={user.firstname} title="you don't have and image"/>Logout</a>
@@ -27,6 +29,8 @@ class Navbar extends Component {
     const guestLinks = (
       <nav>
       <Link to="/" className="navlink">Home</Link>
+      <Link to="/entrepreneurs" className="navlink">Entrepreneur</Link>
+
       <Link to="/profiles" className="navlink">FastLancer Profiles</Link>
 
       <Link to="/login" className="navlink">Login</Link>

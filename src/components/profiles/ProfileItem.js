@@ -10,14 +10,14 @@ class ProfileItem extends Component {
     const {profile} = this.props;
     return (
 <div className="cardcontainer">
-<div className="card" style={{width: "23rem"}}>
+<div className="card" style={{width: "20rem"}}>
     <img className="card-img-top" src={profile.user.avatar}  alt="Card image cap"/>
-    <div className="card-body">
+    <div id ="jaune" className="card-body">
     <h3 className="card-title"><span>{profile.user.firstname}</span><span> {profile.user.lastname}</span></h3>
     <h2 className="card-text">{profile.title}</h2>
   </div>
 
-  <div className="card-body">
+  <div id ="jaune" className="card-body">
     <Link to={`/profile/${profile.handle}`} href="#" className="card-link">Card profile</Link>
   </div>
     </div>

@@ -13,6 +13,8 @@ import CreateProfile from "./components/create-profile/CreateProfile";
 import EditProfile from "./components/edit-profile/EditProfile";
 import Profiles from "./components/profiles/Profiles";
 import Profile from "./components/profile/Profile";
+import Entrepreneurs from "./components/layout/entrepreneurs/Entrepreneurs";
+
 
 
 import store from "./store";
@@ -64,7 +66,9 @@ class App extends Component {
       <div>
       <Navbar />
       <Route exact path="/" component={Landing}/>
-      <div className="container">
+      {/* <div className="container"> */}
+      <Route exact path="/entrepreneurs" component={Entrepreneurs}/>
+
         <Route exact path="/register" component={Register}/>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/profiles" component={Profiles}/>
@@ -82,7 +86,7 @@ class App extends Component {
         <PrivateRoute exact path="/edit-profile" component={EditProfile}/>
         </Switch>
 
-      </div>
+      {/* </div> */}
       </div>
     </Router>
     </Provider>
