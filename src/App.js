@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Provider} from "react-redux";
 import './App.css';
-import Logo from "../src/components/layout/landing/image/logo.png";
-import Logo2 from "../../client-team-lancer/src/fastup.png";
+import logo2 from "./fastup.png";
 
 import Navbar from "./components/layout/navbar/navbar";
 import Landing from "./components/layout/landing/Landing";
@@ -59,7 +58,7 @@ class App extends Component {
     <body>
     <Provider store={store}>
       <div className="logo-container">
-      <img src={Logo2} className="logo"/>
+      <img src={logo2} className="logo"/>
       </div>
 
     <Router>

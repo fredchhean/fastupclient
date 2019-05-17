@@ -26,8 +26,8 @@ class Landing extends Component {
         To create the futur UNICORNS
       </p>
       <div className="buttoncontainer">
-      <Link class="btn btn-primary1" to="/entrepreneurs" role="button">You are an Freelancer</Link>
-      <Link class="btn btn-primary1" to="/profiles" role="button">You are an Entrepreneur</Link>
+      <Link className="btn btn-primary1" to="/entrepreneurs" role="button">You are an Freelancer</Link>
+      <Link className="btn btn-primary1" to="/profiles" role="button">You are an Entrepreneur</Link>
 
       </div>
       
