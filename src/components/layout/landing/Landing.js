@@ -25,55 +25,17 @@ class Landing extends Component {
         <p>
         To create the futur UNICORNS
       </p>
-      </div>
-        </div>
+      <div className="buttoncontainer">
+      <Link class="btn btn-primary1" to="/entrepreneurs" role="button">You are an Entrepreneur</Link>
+      <Link class="btn btn-primary1" to="/profiles" role="button">You are an Entrepreneur</Link>
 
       </div>
-      <div className="howitworkscontainer">
-      <div>szszsz</div>
-
-      </div>
-      {/* <div>
-      <Link to="/login" className="button-landing">login</Link>
-    <Link to="/register" className="button-landing">sign up</Link>
-      </div> */}
-      <div className="middlecontainer">
-      <div className="entrepreneurlittle">
-          <img src="/images/fred.jpg" alt=""/>
-          <h2>Hello.</h2>
-          <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.
-          </p>
-        </div>
-        
       
       </div>
-      <div className="cardcontainer">
-      <div className="card" style={{width: "18rem"}}>
-  <img className="card-img-top" src="..." alt="Card image cap"/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div className="card" style={{width: "18rem"}}>
-  <img className="card-img-top" src="..." alt="Card image cap"/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div className="card" style={{width: "18rem"}}>
-  <img className="card-img-top" src="..." alt="Card image cap"/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
- 
+        </div>
+
+      </div>
+      
       </div>
       
       

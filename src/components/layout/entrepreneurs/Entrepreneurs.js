@@ -3,6 +3,8 @@ import "./Entrepreneurs.css";
 import Light from "../../../../src/img-for-landing/idea.png";
 import Comet from "../../../../src/img-for-landing/start-up (1).png";
 import Team from "../../../../src/img-for-landing/network (2).png";
+import {Link} from "react-router-dom";
+
 
 
 
@@ -38,15 +40,20 @@ export default class Entrepreneurs extends Component {
   <img className="card-img-top" src={Comet} alt="Card image cap" style={{width: "15rem"}} />
     <h4 className="card-title card-title1">SkyRocket</h4>
     <p className="textoflogo card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ 
+
   </div>
 
 
 
 
         </div>
+        <div>
+    <Link class="btn btn-primary1 btn-primary2" to="/entrepreneurs" role="button">You want to submit your projet</Link>
+    </div>
+
 
       </div>
-  
 
 
       </div>

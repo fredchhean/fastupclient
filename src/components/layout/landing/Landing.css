@@ -12,14 +12,14 @@
 
 .textunicorns{
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 100;
   color: white;
 }
 
 .connecttext{
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 100;
   color: #FFFD61;
   
@@ -75,4 +75,18 @@
 .cardcontainer{
   display: flex;
   justify-content: space-evenly;
+}
+
+.buttoncontainer{
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: space-evenly;
+  margin-top: 3rem;
+}
+
+.btn-primary1{
+  background-color: #FFFD61;
+  padding: 2rem;
+  color: black;
+  font-size: 1.5rem;
 }
